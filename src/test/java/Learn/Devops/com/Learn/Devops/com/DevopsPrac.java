@@ -18,7 +18,7 @@ public class DevopsPrac {
 	public void openbrowser_chrome(){
 				
 		System.setProperty("webdriver.chrome.driver", path +"\\Server\\chromedriver.exe");
-		System.out.println("The thread ID for chrome is "+ Thread.currentThread().getId());
+		System.out.println("The thread ID for Chrome is "+ Thread.currentThread().getId());
 		driver = new ChromeDriver();
 		driver.get("http://www.javatpoint.com/");
 		driver.manage().window().maximize();
@@ -37,7 +37,7 @@ public class DevopsPrac {
 	public void openbrowser_edge(){
 		
 		System.setProperty("webdriver.edge.driver", path +"\\Server\\msedgedriver.exe");
-		System.out.println("The thread ID for edge is "+ Thread.currentThread().getId());
+		System.out.println("The thread ID for Edge is "+ Thread.currentThread().getId());
 		driver = new EdgeDriver();
 		driver.get("http://www.javatpoint.com/");
 		driver.manage().window().maximize();
